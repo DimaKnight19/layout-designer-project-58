@@ -16,12 +16,10 @@ main{
 }
 
 
-
-
 *{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     color: var(--dark);
@@ -30,14 +28,6 @@ main{
 
 
 
-h1 {
-    font-family: "Neucha", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-    line-height: 1.6em;
-    font-size: 72px;
-}
 
 h2 {
     font-size: 60px;
@@ -52,4 +42,104 @@ section {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+
+header {
+    position: relative;
+    width: 1440px;
+    height: 914px;
+}
+
+header:before {
+    content: url('/layout-designer-project-58/src/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 6%;
+    z-index: 0;
+}
+
+h1 {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 72px;
+    color: var(--main);
+    z-index: 1;
+}
+.highlight {
+    color: var(--main-dark);
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 72px;
+    z-index: 1;
+}
+
+
+.main-name {
+    position: absolute;
+    width: 1138px;
+    height: 258px;
+    top: 100px;
+    left: 165px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 2;
+}
+
+.first-img {
+    position: absolute;
+    width: 1082.81px;
+    height: 525px;
+    top: 55px;
+    left: 461px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 1;
+}
+
+.text-1 {
+    position: absolute;
+    width: 540px;
+    height: 141px;
+    top: 543px;
+    left: 165px;
+    gap: 0px;
+    opacity: 0px;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+
+
+.text-2 {
+    position: absolute;
+    width: 540px;
+    height: 186px;
+    top: 539px;
+    left: 735px;
+    gap: 0px;
+    opacity: 0px;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.first-button {
+    position: absolute;
+    width: 148px;
+    height: 49px;
+    top: 765px;
+    left: 735px;
+    padding: 11px 23px 12px 24px;
+    gap: 12px;
+    opacity: 0px;
+    background-color: var(--main);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+
 }
