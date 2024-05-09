@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root{
+    --width-content:1100px;
+    --font-title: "Neucha", cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
 main{
     --white: #fff;
     --half-white: #d7ccc0;
@@ -37,12 +46,7 @@ h3 {
     font-size: 34px;
 }
 
-section {
-    width: 1110px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
 
 
 header {
@@ -144,11 +148,23 @@ h1 {
 
 }
 
+section {
+    text-align: center;
+    /* max-width: 1100px; */
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+
+}
+
+
 .video-section {
     position: relative;
     width: 1440px;
     height: 914px;
     background-color: var(--white);
+    text-align: center;
+
+    width: var(--width-content);
 
 }
 
@@ -182,7 +198,150 @@ h1 {
     height: 569px;
     top: 329px;
     left: 261px;
-
-
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+
+.navigation-section {
+    width: 100%;
+    height: 991px;
+    margin: 0;
+
+    background-color: var(--main-dark);
+    
+
+    display: flex;
+    justify-content: center; /* Центрируем основной контейнер по горизонтали */
+    align-items: center;
+}
+
+.cards {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку */
+    justify-content: space-between; /* Равномерно распределяет элементы */
+    max-width: 1100px; /* Ограничиваем ширину до 1100 пикселей */
+    width: 100%; /* Чтобы контейнер занял всю возможную ширину */
+    gap: 20px; /* Отступы между карточками */
+
+    
+
+}
+
+.card-small {
+    flex: 0 1 calc((100% - 40px) / 3); /* Три карточки в ряд с равными отступами */
+    height: 323px;
+    width: 350px;
+    background-color: #F5F4F0;
+    box-sizing: border-box; /* Учитываем границы в расчете ширины */
+    padding: 24px;
+    text-align: left;
+}
+
+
+.card-big {
+    flex: 0 1 calc((100% - 40px) / 3); /* Три карточки в ряд с равными отступами */
+    height: 348px;
+    width: 350px;
+    background-color: #F5F4F0;
+    box-sizing: border-box; /* Учитываем границы в расчете ширины */
+    padding: 24px;
+    text-align: left;
+}
+
+.card-1 {
+    flex: 0 1 calc((100% - 40px) / 3); /* Три карточки в ряд с равными отступами */
+    height: 323px;
+    box-sizing: border-box; /* Учитываем границы в расчете ширины */
+    padding: 0%;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    color: var(--main); 
+}
+
+.card-1 h2 {
+    margin: 0; /* Убирает внешний отступ */
+    padding: 0; /* Убирает внутренний отступ, если есть */
+}
+
+h2 span {
+    font-family: var(--font-title);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.card-small h3 {
+    font-family: var(--font-title);
+    font-size: 64px;
+    text-align: left;
+    color:#42413C;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    line-height: 1em;
+
+}
+
+.card-small h4 {
+    font-size: 34px;
+    font-family: var(--font-title);
+    color: var(--main);
+
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40.8px;
+}
+
+.card-small p {
+    color: var(--dark);
+    font-size: 16px;
+
+    line-height: 25.6px;
+
+}
+
+
+.card-big h3 {
+    font-family: var(--font-title);
+    font-size: 64px;
+    text-align: left;
+    color:#42413C;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    line-height: 1em;
+
+}
+
+.card-big h4 {
+    font-size: 34px;
+    font-family: var(--font-title);
+    color: var(--main);
+
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40.8px;
+}
+
+.card-big p {
+    color: var(--dark);
+    font-size: 16px;
+
+    line-height: 25.6px;
+
 }
